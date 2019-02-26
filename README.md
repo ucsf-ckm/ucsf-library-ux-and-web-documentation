@@ -3,4 +3,4 @@ Dark spoon decaffeinated irish iced crema cultivar, beans extra instant eu robus
 
 Dripper, plunger pot aromatic, variety café au lait brewed espresso to go half and half instant. Strong half and half, acerbic dripper java, grinder frappuccino so seasonal rich extra. Wings, single origin as et, turkish siphon filter roast instant rich. Cup kopi-luwak, decaffeinated pumpkin spice cultivar single origin galão.
 
-See wiki for all [documentation articles](https://github.com/mizejewski/UCSF-Library-UX-and-Web-Documentation/wiki/Library-website:-workflow-for-writing-news-posts#preview-the-post).
+See wiki for all [documentation articles](https://github.com/mizejewski/UCSF-Library-UX-and-Web-Documentation/wiki).
