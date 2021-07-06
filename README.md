@@ -1,3 +1,5 @@
+![LibCal check](https://github.com/ucsf-ckm/ucsf-library-ux-and-web-documentation/actions/workflows/check-libcal.yml/badge.svg)
+
 # UCSF Library UX and Web Documentation
 
 If an article requires screen shots:
