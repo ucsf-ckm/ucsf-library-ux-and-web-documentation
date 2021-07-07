@@ -1,4 +1,6 @@
-# This workflow will do a clean install of node dependencies and run the checker.
+# This workflow will check that appointments are available for all consultants
+# listed in LibCal. When there are no appointments available, it's usually
+# because the user's Exchange connector needs to be re-authorized.
 
 name: LibCal check
 
