@@ -12,7 +12,7 @@ await page.goto('https://calendars.library.ucsf.edu/');
 const links = await page.$$eval(linkSelector, (arr) => arr.map( (el) => el.innerHTML ));
 const len = links.length;
 
-const errors = false;
+let errors = false;
 
 for (let i=0; i<len; i++) {
   await page.waitForFunction(
