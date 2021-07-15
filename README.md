@@ -1,4 +1,4 @@
-![LibCal check](https://github.com/ucsf-ckm/ucsf-library-ux-and-web-documentation/actions/workflows/check-libcal.yml/badge.svg)
+[![LibCal check](https://github.com/ucsf-ckm/ucsf-library-ux-and-web-documentation/actions/workflows/check-libcal.yml/badge.svg)](https://github.com/ucsf-ckm/ucsf-library-ux-and-web-documentation/actions/workflows/check-libcal.yml)
 
 # UCSF Library UX and Web Documentation
 
