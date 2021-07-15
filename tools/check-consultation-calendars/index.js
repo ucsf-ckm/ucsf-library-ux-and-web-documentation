@@ -15,9 +15,15 @@ const len = links.length;
 let errors = false;
 
 for (let i=0; i<len; i++) {
-  await page.waitForFunction(
-    () => document.querySelectorAll('iframe')[0].contentWindow.document.body.innerText === ''
-  );
+  try {
+    await page.waitForFunction(
+      () => document.querySelectorAll('iframe')[0].contentWindow.document.body.innerText === ''
+    );
+  } catch (e) {
+    errors = true;
+    console.log(`Could not load schedule for ${links[i]}. Skipping.`);
+    continue;
+  }
 
   await page.evaluate(`document.querySelectorAll('${linkSelector}')[${i}].click()`);
 
