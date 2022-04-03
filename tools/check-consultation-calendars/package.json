@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "Rich Trott <rtrott@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "puppeteer": "^13.5.2"
   }

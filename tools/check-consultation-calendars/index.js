@@ -21,6 +21,7 @@ for (let i=0; i<len; i++) {
     );
   } catch (e) {
     errors = true;
+    console.log(`Error: ${e}`);
     console.log(`Could not load schedule for ${links[i]}. Skipping.`);
     continue;
   }
