@@ -15,4 +15,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: npx linkinator --concurrency 10 -r --skip '^(?!https?:\/\/(www|search)\.library\.ucsf\.edu\/)' https://www.library.ucsf.edu/ -f csv
+    - run: npx linkinator --concurrency 10 -r --skip '^(?!https?://.*library.ucsf.edu/)' https://www.library.ucsf.edu/ -f csv
