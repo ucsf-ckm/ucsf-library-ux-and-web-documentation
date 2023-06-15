@@ -17,4 +17,4 @@ jobs:
     steps:
     # Skip anything that is not *.library.ucsf.edu, and also skip calendars.library.ucsf.edu
     # because it rate limits aggressively.
-    - run: npx linkinator --concurrency 10 -r --skip '^(?!https?://.*library.ucsf.edu/)|https?://calendars.library.ucsf.edu/' https://www.library.ucsf.edu/ -f csv
+    - run: npx linkinator --concurrency 10 -r --skip '^(?!https?://.*.ucsf.edu/)|https?://calendars.library.ucsf.edu/|https?://libraryhelp.ucsf.edu/' https://www.library.ucsf.edu/ -f csv
