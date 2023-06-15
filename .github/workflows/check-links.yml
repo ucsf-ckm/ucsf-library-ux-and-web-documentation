@@ -16,6 +16,5 @@ jobs:
 
     steps:
     # Skip anything that is not *.ucsf.edu, and also skip Springshare (LibGuides, LibCal)
-    # because it rate limits aggressively, and Zendesk because it uses Cloudflare to block bots
-    # like this link-checker.
-    - run: npx linkinator --concurrency 10 -r --skip '^(?!https?://.*.ucsf.edu/)|https?://calendars.library.ucsf.edu/|https?://guides.ucsf.edu/|https?://libraryhelp.ucsf.edu/' https://www.library.ucsf.edu/ -f csv
+    # because it rate limits aggressively, and other sites (Zendesk, makeagift) that block bots.
+    - run: npx linkinator --concurrency 10 -r --skip '^(?!https?://.*.ucsf.edu/)|https?://calendars.library.ucsf.edu/|https?://guides.ucsf.edu/|https?://libraryhelp.ucsf.edu/|https?://makeagift.ucsf.edu/' https://www.library.ucsf.edu/ -f csv
