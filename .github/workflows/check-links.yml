@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Skip anything that is not *.library.ucsf.edu, and also skip calendars.library.ucsf.edu
-    # because it rate limits aggressively.
-    - run: npx linkinator --concurrency 10 -r --skip '^(?!https?://.*.ucsf.edu/)|https?://calendars.library.ucsf.edu/|https?://libraryhelp.ucsf.edu/' https://www.library.ucsf.edu/ -f csv
+    # Skip anything that is not *.ucsf.edu, and also skip Springshare (LibGuides, LibCal)
+    # because it rate limits aggressively, and Zendesk because it uses Cloudflare to block bots
+    # like this link-checker.
+    - run: npx linkinator --concurrency 10 -r --skip '^(?!https?://.*.ucsf.edu/)|https?://calendars.library.ucsf.edu/|https?://guides.ucsf.edu/|https?://libraryhelp.ucsf.edu/' https://www.library.ucsf.edu/ -f csv
