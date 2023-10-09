@@ -11,6 +11,6 @@
   "author": "Rich Trott <rtrott@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "puppeteer": "^21.3.6"
+    "puppeteer": "^21.3.8"
   }
 }
