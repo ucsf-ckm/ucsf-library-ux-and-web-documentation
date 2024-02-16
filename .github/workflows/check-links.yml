@@ -3,10 +3,6 @@
 name: Link check
 
 on:
-  schedule:
-    # Run every day at 4:05 AM.
-    - cron: '5 4 * * *'
-
   workflow_dispatch:
 
 jobs:
